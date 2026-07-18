@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stopwatch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Stopwatch</h1>
+
+        <div class="stopwatch">
+
+            <div id="display" class="display">
+                00:00:00.00
+            </div>
+
+            <div class="controls">
+
+                <button id="startBtn" class="btn primary">
+                    <i class="fa-solid fa-play"></i>
+                    Start
+                </button>
+
+                <button id="pauseBtn" class="btn warning">
+                    <i class="fa-solid fa-pause"></i>
+                    Pause
+                </button>
+
+                <button id="resetBtn" class="btn danger">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Reset
+                </button>
+
+                <button id="lapBtn" class="btn secondary">
+                    <i class="fa-solid fa-flag"></i>
+                    Lap
+                </button>
+
+            </div>
+
+        </div>
+
+        <section class="laps">
+
+            <div class="lap-header">
+
+                <h2>Lap Records</h2>
+
+                <button id="clearLaps" class="clear-btn">
+                    Clear
+                </button>
+
+            </div>
+
+            <ul id="lapList"></ul>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
